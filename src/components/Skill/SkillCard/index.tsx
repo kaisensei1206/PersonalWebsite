@@ -18,9 +18,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ persentage, title }) => {
   useEffect(() => {
     if (intersection && intersection.intersectionRatio > 0) {
       setCompleted(persentage);
-      console.log(title);
     }
-    console.log(intersection);
   }, [intersection]);
   return (
     <div ref={intersectionRef} className={styles.container}>

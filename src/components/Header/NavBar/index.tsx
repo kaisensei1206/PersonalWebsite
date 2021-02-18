@@ -1,5 +1,4 @@
 import React, { useState, useCallback, useEffect } from "react";
-import { Link, Route, useHistory, useLocation } from "react-router-dom";
 import styles from "./style.module.scss";
 interface NavBarProps {
   setMobileNavOn: () => void;

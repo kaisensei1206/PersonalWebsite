@@ -10,6 +10,7 @@ import Languages from "./components/Languages";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 function App() {
+  document.title = "Kwan Lok NG";
   return (
     <div className={styles.container}>
       <Header />

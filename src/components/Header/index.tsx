@@ -1,5 +1,4 @@
-import React, { useState, useCallback, useEffect } from "react";
-import { Link, Route, useHistory, useLocation } from "react-router-dom";
+import React, { useState, useCallback } from "react";
 import styles from "./style.module.scss";
 
 import NavBar from "./NavBar";
@@ -10,16 +9,16 @@ const Header = () => {
   const navToggleOff = useCallback(() => setIsNavBarDisplay(false), []);
   const headerToggleOn = useCallback(() => setIsHeaderDisplay(true), []);
   const headerToggleOff = useCallback(() => setIsHeaderDisplay(false), []);
-  let counter: any;
+  let counter;
   window.onscroll = () => {
     headerToggleOn();
+    window.clearTimeout(counter);
     if (!isNavBarDisplay || window.pageYOffset !== 0) {
-      clearTimeout(counter);
       counter = window.setTimeout(() => headerToggleOff(), 1000 * 5);
     }
     if (window.pageYOffset === 0) {
-      clearTimeout(counter);
-      counter = window.setTimeout(() => headerToggleOn(), 0);
+      headerToggleOn();
+      console.log("on top");
     }
   };
   console.log(isHeaderDisplay);
