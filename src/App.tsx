@@ -1,5 +1,3 @@
-import { Route, Switch, Redirect } from "react-router-dom";
-
 import styles from "./style.module.scss";
 import Header from "./components/Header";
 import Home from "./components/Home";
