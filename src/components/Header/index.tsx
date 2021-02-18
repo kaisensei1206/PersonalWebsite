@@ -1,15 +1,49 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import { Link, Route, useHistory, useLocation } from "react-router-dom";
 import styles from "./style.module.scss";
+
 import NavBar from "./NavBar";
 const Header = () => {
   const [isNavBarDisplay, setIsNavBarDisplay] = useState(false);
+  const [isHeaderDisplay, setIsHeaderDisplay] = useState(true);
   const navToggleOn = useCallback(() => setIsNavBarDisplay(true), []);
   const navToggleOff = useCallback(() => setIsNavBarDisplay(false), []);
+  const headerToggleOn = useCallback(() => setIsHeaderDisplay(true), []);
+  const headerToggleOff = useCallback(() => setIsHeaderDisplay(false), []);
+  let counter: any;
+  window.onscroll = () => {
+    headerToggleOn();
+    if (!isNavBarDisplay || window.pageYOffset !== 0) {
+      clearTimeout(counter);
+      counter = window.setTimeout(() => headerToggleOff(), 1000 * 5);
+    }
+    if (window.pageYOffset === 0) {
+      clearTimeout(counter);
+      counter = window.setTimeout(() => headerToggleOn(), 0);
+    }
+  };
+  console.log(isHeaderDisplay);
   return (
-    <nav className={styles.headerContainer}>
+    <header
+      className={
+        isHeaderDisplay
+          ? styles.headerContainer_open
+          : styles.headerContainer_close
+      }
+    >
       <div className={styles.header}>
-        <header className={styles.header_siteTitle}>Sam's Website</header>
+        <a className={styles.header_siteTitle} href={"#Home"}>
+          Home
+        </a>
+        <a className={styles.header_siteTitle} href={"#Intro"}>
+          Intro
+        </a>
+        <a className={styles.header_siteTitle} href={"#Portfolio"}>
+          Portfolio
+        </a>
+        <a className={styles.header_siteTitle} href={"#Contact"}>
+          Contact
+        </a>
       </div>
       <div className={styles.phoneHerder}>
         <div className={styles.header_mainnavButtom} onClick={navToggleOn}>
@@ -24,7 +58,7 @@ const Header = () => {
           setMobileNavOff={() => navToggleOff()}
         />
       )}
-    </nav>
+    </header>
   );
 };
 

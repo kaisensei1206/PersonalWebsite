@@ -15,18 +15,37 @@ const NavBar: React.FC<NavBarProps> = ({ setMobileNavOn, setMobileNavOff }) => {
         }`}
       >
         <div className={styles.navBar_menuNavLayer}>
-          <h1 className={styles.navBar_siteTitle}>Sam's Website</h1>
+          <h1 className={styles.navBar_siteTitle}></h1>
           <div className={styles.navBar_menuNav}>
             <div className={styles.navBar_menuNav_item}>
-              <div className={styles.navBar_menuNav_item_title}>MENU</div>
-              <div className={styles.navBar_menuNav_item_subMenuNav}>
-                <div
-                  className={styles.navBar_menuNav_item_subMenuNav_subItem}
-                  onClick={setMobileNavOff}
-                >
-                  Home
-                </div>
-              </div>
+              <a
+                className={styles.navBar_menuNav_item_title}
+                href={"#Home"}
+                onClick={setMobileNavOff}
+              >
+                Home
+              </a>
+              <a
+                className={styles.navBar_menuNav_item_title}
+                href={"#Intro"}
+                onClick={setMobileNavOff}
+              >
+                Intro
+              </a>
+              <a
+                className={styles.navBar_menuNav_item_title}
+                href={"#Protfolio"}
+                onClick={setMobileNavOff}
+              >
+                Protfolio
+              </a>
+              <a
+                className={styles.navBar_menuNav_item_title}
+                href={"#Contact"}
+                onClick={setMobileNavOff}
+              >
+                Contact
+              </a>
             </div>
           </div>
         </div>
