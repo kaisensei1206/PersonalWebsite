@@ -6,3 +6,6 @@ declare module "*.jpg" {
   declare module "*.png" {
     export default "" as string;
   }
+  declare module "react/jsx-runtime" {
+    export default any;
+  }
