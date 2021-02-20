@@ -19,6 +19,16 @@
     width: 320px;
     height: 162px;
   }
+  &:hover {
+    .container_item_container_cover {
+      opacity: 1;
+      transition: 0.5s;
+    }
+    .container_item_container_img {
+      filter: grayscale(0%);
+      transition: 0.5s;
+    }
+  }
 }
 .container_item_container_img {
   position: relative;
@@ -40,14 +50,6 @@
   opacity: 0;
   transition: 0.5s;
   padding: 2.45rem;
-  &:hover {
-    opacity: 1;
-    transition: 0.5s;
-    .container_item_container_img {
-      filter: grayscale(0%);
-      transition: 0.5s;
-    }
-  }
 }
 .container_item_container_cover_top {
   height: 90%;
