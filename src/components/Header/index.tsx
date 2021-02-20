@@ -1,26 +1,31 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import styles from "./style.module.scss";
 
 import NavBar from "./NavBar";
 const Header = () => {
+  const displayNavTimeoutRef = useRef<any>();
   const [isNavBarDisplay, setIsNavBarDisplay] = useState(false);
   const [isHeaderDisplay, setIsHeaderDisplay] = useState(true);
-  const navToggleOn = useCallback(() => setIsNavBarDisplay(true), []);
+  const navToggleOn = useCallback(() => {
+    clearTimeout(displayNavTimeoutRef.current);
+    setIsNavBarDisplay(true);
+  }, []);
   const navToggleOff = useCallback(() => setIsNavBarDisplay(false), []);
   const headerToggleOn = useCallback(() => setIsHeaderDisplay(true), []);
   const headerToggleOff = useCallback(() => setIsHeaderDisplay(false), []);
-  let counter;
-  window.onscroll = () => {
-    headerToggleOn();
-    window.clearTimeout(counter);
-    if (!isNavBarDisplay || window.pageYOffset !== 0) {
-      counter = window.setTimeout(() => headerToggleOff(), 1000 * 5);
-    }
-    if (window.pageYOffset === 0) {
+
+  useEffect(() => {
+    const onScroll = () => {
       headerToggleOn();
-      console.log("on top");
-    }
-  };
+      clearTimeout(displayNavTimeoutRef.current);
+      if (window.pageYOffset !== 0) {
+        displayNavTimeoutRef.current = setTimeout(headerToggleOff, 3000);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   console.log(isHeaderDisplay);
   return (
     <header
