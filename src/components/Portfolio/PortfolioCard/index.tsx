@@ -20,10 +20,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
     <div className={styles.container}>
       <div className={styles.container_item_container}>
         <img className={styles.container_item_container_img} src={imageUrl} />
-        <div
-          className={styles.container_item_container_cover}
-          onClick={() => window.open(websiteUrl)}
-        >
+        <div className={styles.container_item_container_cover}>
           <div className={styles.container_item_container_cover_top}>
             <div className={styles.container_item_container_cover_top_title}>
               {title}
