@@ -4,6 +4,10 @@
   position: relative;
   width: 100%;
   justify-content: center;
+  @media (min-width: 1024px) {
+    padding-top: 90px;
+    margin-top: -90px;
+  }
 }
 .container_contain {
   width: 100%;

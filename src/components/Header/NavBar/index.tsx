@@ -33,7 +33,7 @@ const NavBar: React.FC<NavBarProps> = ({ setMobileNavOn, setMobileNavOff }) => {
               </a>
               <a
                 className={styles.navBar_menuNav_item_title}
-                href={"#Protfolio"}
+                href={"#Portfolio"}
                 onClick={setMobileNavOff}
               >
                 Protfolio

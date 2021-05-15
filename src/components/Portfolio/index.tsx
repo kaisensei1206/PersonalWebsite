@@ -5,6 +5,8 @@ import ProtfolioCard from "./PortfolioCard";
 import demo1 from "../../image/1.png";
 import demo2 from "../../image/2.png";
 import demo3 from "../../image/3.png";
+import demo5 from "../../image/4.png";
+import demo6 from "../../image/5.png";
 import demo4 from "../../image/discord-logo.jpg";
 
 const Portfolio = () => {
@@ -26,11 +28,29 @@ const Portfolio = () => {
         <div className={styles.infoSection}>
           <div className={styles.infoSection_container}>
             <ProtfolioCard
+              imageUrl={demo5}
+              websiteUrl={"https://is-real-time-chatting.herokuapp.com/"}
+              githubUrl={"https://github.com/NG-KWAN-LOK/IS_P2P_Chat"}
+              title={"Messager - In Progress"}
+              subtitle={
+                "Real Time Secured Messaging Web Application using React, Socket.io and cryptosystem."
+              }
+            />
+            <ProtfolioCard
               imageUrl={demo2}
               websiteUrl={"https://ds-shop-react.herokuapp.com/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/DS_Eshop"}
               title={"'修皮'Online Shop"}
               subtitle={"A online shop demo using React for Front-end."}
+            />
+            <ProtfolioCard
+              imageUrl={demo6}
+              websiteUrl={"https://sam-personal-website.herokuapp.com/"}
+              githubUrl={"https://github.com/NG-KWAN-LOK/PersonalWebsite"}
+              title={"Sam Personal Website"}
+              subtitle={
+                "This wonderful website and my first personal website using React."
+              }
             />
             <ProtfolioCard
               imageUrl={demo1}
