@@ -7,6 +7,7 @@ import demo2 from "../../image/2.png";
 import demo3 from "../../image/3.png";
 import demo5 from "../../image/4.png";
 import demo6 from "../../image/5.png";
+import demo7 from "../../image/6.png";
 import demo4 from "../../image/discord-logo.jpg";
 
 const Portfolio = () => {
@@ -31,7 +32,7 @@ const Portfolio = () => {
               imageUrl={demo5}
               websiteUrl={"https://is-real-time-chatting.herokuapp.com/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/IS_P2P_Chat"}
-              title={"Messager - In Progress"}
+              title={"Messager"}
               subtitle={
                 "Real Time Secured Messaging Web Application using React, Socket.io and cryptosystem."
               }
@@ -44,12 +45,21 @@ const Portfolio = () => {
               subtitle={"A online shop demo using React for Front-end."}
             />
             <ProtfolioCard
-              imageUrl={demo6}
-              websiteUrl={"https://sam-personal-website.herokuapp.com/"}
-              githubUrl={"https://github.com/NG-KWAN-LOK/PersonalWebsite"}
-              title={"Sam Personal Website"}
+              imageUrl={demo3}
+              websiteUrl={"https://ng-kwan-lok.github.io/BuddyCityWeb"}
+              githubUrl={"https://github.com/NG-KWAN-LOK/Buddy-City-React"}
+              title={"Buddy-INFO Buddy Visitors' Guide"}
               subtitle={
-                "This wonderful website and my first personal website using React."
+                "A online visitors' guide website using React and i18n for multi language."
+              }
+            />
+            <ProtfolioCard
+              imageUrl={demo7}
+              websiteUrl={"https://youtu.be/09_jaIdTidA?t=7213"}
+              githubUrl={"https://github.com/fantong11/VirtualCamera"}
+              title={"Final Year Project - Virtual Camera"}
+              subtitle={
+                "A Virtual Camera with Virtual Avatar and Virtual Reality using Unity and ARKit."
               }
             />
             <ProtfolioCard
@@ -75,12 +85,12 @@ const Portfolio = () => {
               }
             />
             <ProtfolioCard
-              imageUrl={demo3}
-              websiteUrl={"https://ng-kwan-lok.github.io/BuddyCityWeb/"}
-              githubUrl={"https://github.com/NG-KWAN-LOK/BuddyCityWeb"}
-              title={"Buddy-INFO Buddy Visitors' Guide"}
+              imageUrl={demo6}
+              websiteUrl={"https://sam-personal-website.herokuapp.com/"}
+              githubUrl={"https://github.com/NG-KWAN-LOK/PersonalWebsite"}
+              title={"Sam Personal Website"}
               subtitle={
-                "A online visitors' guide website demo using HTML/ CSS and Javascript."
+                "This wonderful website and my first personal website using React."
               }
             />
           </div>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useIntersection } from "react-use";
 import styles from "./style.module.scss";
 
-interface EducationCardProps {
+interface ExperienceCardProps {
   period: string;
   title: string;
   website: string;
@@ -10,7 +10,7 @@ interface EducationCardProps {
   location: string;
   info: string;
 }
-const EducationCard: React.FC<EducationCardProps> = ({
+const ExperienceCard: React.FC<ExperienceCardProps> = ({
   period,
   title,
   website,
@@ -44,4 +44,4 @@ const EducationCard: React.FC<EducationCardProps> = ({
   );
 };
 
-export default EducationCard;
+export default ExperienceCard;

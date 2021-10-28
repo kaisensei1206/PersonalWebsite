@@ -25,3 +25,11 @@
   color: var(--primary-text-color);
   font-size: 1.4rem;
 }
+.item_text_url {
+  @extend .item_text;
+  transition: 0.5s;
+  &:hover {
+    color: var(--second-title-color);
+    transition: 0.5s;
+  }
+}

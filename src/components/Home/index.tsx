@@ -35,10 +35,14 @@ const Home = () => {
             <div className={styles.infoSection_container_footer}>
               <hr className={styles.infoSection_container_footer_line} />
               <div className={styles.infoSection_container_footer_contact}>
-                <ContactCard title={"Nationality"} text={"Hong Kong"} />
-                <ContactCard title={"Location"} text={"Taipei, ROC"} />
-                <ContactCard title={"Phone"} text={"0909587730"} />
-                <ContactCard title={"Email "} text={"sambig12004@gmail.com"} />
+                <ContactCard title='Nationality' text='Hong Kong' />
+                <ContactCard title='Location' text='Taipei, ROC' />
+                <ContactCard
+                  title='LinkedIn'
+                  text='Kwan Lok NG'
+                  url='https://www.linkedin.com/in/kwan-lok-ng-0ab026208/'
+                />
+                <ContactCard title='Email' text='sambig12004@gmail.com' />
               </div>
             </div>
           </div>
