@@ -52,8 +52,8 @@ const Intro = () => {
               beneficial in our society.
             </p>
             <p>
-              To grow father, I am eager to become involved in community work. I
-              participated in flag selling every years when I stayed in Hong
+              To grow further, I am eager to become involved in community work.
+              I participated in flag selling every years when I stayed in Hong
               Kong. Also I have worked as a volunteer in Elderly Home in Taiwan.
               I have developed a sense of empathy. I strongly believe that I
               have to learn to put ourselves into others’ shoes and learn to

@@ -21,11 +21,11 @@ const Skill = () => {
         </div>
         <div className={styles.infoSection}>
           <div className={styles.infoSection_container}>
+            <SkillCard persentage={80} title={"React"} />
             <SkillCard persentage={80} title={"HTML"} />
             <SkillCard persentage={80} title={"CSS/ SASS"} />
             <SkillCard persentage={80} title={"Javascript/ Typescript"} />
-            <SkillCard persentage={70} title={"React"} />
-            <SkillCard persentage={70} title={"JQuery"} />
+            <SkillCard persentage={80} title={"JQuery"} />
             <SkillCard persentage={70} title={"SQL/ MySQL"} />
             <SkillCard persentage={60} title={"Python"} />
             <SkillCard persentage={50} title={"C++"} />
