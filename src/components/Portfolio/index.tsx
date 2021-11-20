@@ -46,7 +46,7 @@ const Portfolio = () => {
             />
             <ProtfolioCard
               imageUrl={demo3}
-              websiteUrl={"https://ng-kwan-lok.github.io/BuddyCityWeb"}
+              websiteUrl={"https://buddycity-info.herokuapp.com/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/Buddy-City-React"}
               title={"Buddy-INFO Buddy Visitors' Guide"}
               subtitle={
