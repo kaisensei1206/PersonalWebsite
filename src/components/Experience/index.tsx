@@ -23,12 +23,14 @@ const Experience = () => {
           <div className={styles.infoSection_container}>
             <div className={styles.infoSection_container_timeLine}>
               <ExperienceCard
-                period='2021 - present'
-                title='Junyi Academy'
-                website='https://www.junyiacademy.org/'
-                position='Software Development & Project Specialist Intern'
-                location='Taipei, ROC'
-                info='• Front-end development of Junyi Academy platform using React.js, Material UI, Redux Toolkit, Observable, APIs integration techniques both JavaScript & TypeScript.\n• Building and Creating custom component libraries with Storybook.\n• Unit test for the web application in multiple browsers & devices.\n• Code refactoring to convert React class component to functional component with hooks & converting JavaScript to TypeScript.\n• Regular web application maintenance, Third-party library updates, bug fixes and so on.\n• Collaborate with Front-end partner, Back-end team members, Project Owner & Project Designer.'
+                period="2021 - present"
+                title="Junyi Academy"
+                website="https://www.junyiacademy.org/"
+                position={"Software Development & Project Specialist Intern"}
+                location="Taipei, ROC"
+                info={
+                  "• Front-end development of Junyi Academy platform using React.js, Material UI, Redux Toolkit, Observable, APIs integration techniques both JavaScript & TypeScript.\n• Building and Creating custom component libraries with Storybook.\n• Unit test for the web application in multiple browsers & devices.\n• Code refactoring to convert React class component to functional component with hooks & converting JavaScript to TypeScript.\n• Regular web application maintenance, Third-party library updates, bug fixes and so on.\n• Collaborate with Front-end partner, Back-end team members, Project Owner & Project Designer."
+                }
               />
             </div>
           </div>
