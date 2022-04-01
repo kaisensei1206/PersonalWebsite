@@ -32,9 +32,16 @@
 .container_item_title_title {
   font-size: 1.68rem;
   color: var(--primary-title-color);
+  text-decoration: underline;
   font-weight: 600;
   text-transform: uppercase;
   margin: 0 0 6px 0;
+  transition: 0.5s;
+  &:hover {
+    color: var(--second-title-color);
+    text-decoration: underline;
+    transition: 0.5s;
+  }
 }
 .container_item_title_position {
   font-size: 1.2rem;

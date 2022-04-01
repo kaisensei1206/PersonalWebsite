@@ -42,6 +42,9 @@ const Header = () => {
         <a className={styles.header_siteTitle} href={"#Intro"}>
           Intro
         </a>
+        <a className={styles.header_siteTitle} href={"#Experience"}>
+          Experience
+        </a>
         <a className={styles.header_siteTitle} href={"#Portfolio"}>
           Portfolio
         </a>

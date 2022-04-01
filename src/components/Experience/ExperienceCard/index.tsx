@@ -19,14 +19,14 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({
   info,
 }) => {
   return (
-    <div className={styles.container}>
+    <div id={"Experience"} className={styles.container}>
       <div className={styles.container_point}></div>
       <div className={styles.container_item_title}>
         <p className={styles.container_item_title_period}>{period}</p>
         <a
           className={styles.container_item_title_title}
           href={website}
-          target='_blank'
+          target="_blank"
         >
           {title}
         </a>

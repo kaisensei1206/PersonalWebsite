@@ -4,6 +4,10 @@
   position: relative;
   width: 100%;
   justify-content: center;
+  @media (min-width: 1024px) {
+    padding-top: 90px;
+    margin-top: -90px;
+  }
 }
 .container_contain {
   width: 100%;
@@ -82,6 +86,7 @@
 }
 .titleSection_container_title {
   color: var(--primary-title-color);
+  text-transform: uppercase;
   font-size: 1.68rem;
   font-weight: 600;
   margin: 0 0 10px 0;

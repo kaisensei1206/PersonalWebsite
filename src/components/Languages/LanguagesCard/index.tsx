@@ -11,7 +11,11 @@ const LanguagesCard: React.FC<LanguagesCardProps> = ({ title, subtitle }) => {
     <div className={styles.container}>
       <div className={styles.container_item_title}>
         <p className={styles.container_item_title_text}>{title}</p>
-        <p className={styles.container_item_title_subtext}>{subtitle}</p>
+        <p className={styles.container_item_title_subtext}>
+          {subtitle.split("\n").map((i) => {
+            return <p>{i}</p>;
+          })}
+        </p>
       </div>
     </div>
   );

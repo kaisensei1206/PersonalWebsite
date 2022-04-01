@@ -9,6 +9,7 @@ import demo5 from "../../image/4.png";
 import demo6 from "../../image/5.png";
 import demo7 from "../../image/6.png";
 import demo4 from "../../image/discord-logo.jpg";
+import demo8 from "../../image/7.png";
 
 const Portfolio = () => {
   return (
@@ -44,6 +45,7 @@ const Portfolio = () => {
               title={"'修皮'Online Shop"}
               subtitle={"A online shop demo using React for Front-end."}
             />
+
             <ProtfolioCard
               imageUrl={demo3}
               websiteUrl={"https://buddycity-info.herokuapp.com/"}
@@ -51,6 +53,17 @@ const Portfolio = () => {
               title={"Buddy-INFO Buddy Visitors' Guide"}
               subtitle={
                 "A online visitors' guide website using React and i18n for multi language."
+              }
+            />
+            <ProtfolioCard
+              imageUrl={demo8}
+              websiteUrl={"https://japanese-wordle-solver.herokuapp.com/"}
+              githubUrl={
+                "https://github.com/NG-KWAN-LOK/Japanese-Wordle-Solver"
+              }
+              title={"Kotobade Asobou Solver"}
+              subtitle={
+                "A web app to solve the game Japanese Version of Wordle - Kotobade Asobou."
               }
             />
             <ProtfolioCard

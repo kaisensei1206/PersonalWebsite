@@ -27,9 +27,9 @@ const Skill = () => {
             <SkillCard persentage={80} title={"CSS/ SASS"} />
             <SkillCard
               persentage={80}
-              title={"Javascript/ JQuery/ Typescript"}
+              title={"Typescript/ Javascript/ JQuery"}
             />
-            <SkillCard persentage={70} title={"Redux Toolkit/ Observable"} />
+            <SkillCard persentage={70} title={"Redux Toolkit"} />
             <SkillCard persentage={70} title={"React Query"} />
             <SkillCard
               persentage={60}
