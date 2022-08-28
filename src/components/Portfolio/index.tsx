@@ -48,7 +48,7 @@ const Portfolio = () => {
 
             <ProtfolioCard
               imageUrl={demo3}
-              websiteUrl={"https://buddycity-info.herokuapp.com/"}
+              websiteUrl={"https://buddy-city-info.sawajiri-ng.net/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/Buddy-City-React"}
               title={"Buddy-INFO Buddy Visitors' Guide"}
               subtitle={
@@ -99,7 +99,7 @@ const Portfolio = () => {
             />
             <ProtfolioCard
               imageUrl={demo6}
-              websiteUrl={"https://sam-personal-website.herokuapp.com/"}
+              websiteUrl={"https://www.sawajiri-ng.net/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/PersonalWebsite"}
               title={"Sam Personal Website"}
               subtitle={
