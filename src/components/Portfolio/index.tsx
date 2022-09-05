@@ -31,7 +31,7 @@ const Portfolio = () => {
           <div className={styles.infoSection_container}>
             <ProtfolioCard
               imageUrl={demo5}
-              websiteUrl={"https://is-real-time-chatting.herokuapp.com/"}
+              websiteUrl={"https://messager.sawajiri-ng.net/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/IS_P2P_Chat"}
               title={"Messager"}
               subtitle={
@@ -57,7 +57,7 @@ const Portfolio = () => {
             />
             <ProtfolioCard
               imageUrl={demo8}
-              websiteUrl={"https://japanese-wordle-solver.herokuapp.com/"}
+              websiteUrl={"https://kotoba-asobou-solver.sawajiri-ng.net/"}
               githubUrl={
                 "https://github.com/NG-KWAN-LOK/Japanese-Wordle-Solver"
               }

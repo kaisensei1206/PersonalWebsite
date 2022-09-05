@@ -11,7 +11,7 @@ import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
 function App() {
-  document.title = "Kwan Lok NG";
+  document.title = "Kwan Lok NG Offical";
   return (
     <div className={styles.container}>
       <Header />
