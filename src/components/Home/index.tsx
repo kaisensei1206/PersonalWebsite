@@ -1,7 +1,7 @@
 import React, { useState, useCallback } from "react";
 import { Link, Route, useHistory, useLocation } from "react-router-dom";
 import styles from "./style.module.scss";
-import avatar from "../../image/IMG_3153.jpg";
+import avatar from "../../image/icon.jpg";
 
 import ContactCard from "./ContactCard";
 const Home = () => {
