@@ -5,7 +5,7 @@ import ContactCard from "./ContactCard";
 
 const Contact = () => {
   return (
-    <div id='Contact' className={styles.container}>
+    <div id="Contact" className={styles.container}>
       <div className={styles.container_bg_primaryHeader}></div>
       <div className={styles.container_bg_primaryContent}></div>
       <div className={styles.container_contain}>
@@ -21,18 +21,17 @@ const Contact = () => {
         </div>
         <div className={styles.infoSection}>
           <div className={styles.infoSection_container}>
-            <ContactCard title='Location' text='Taipei, ROC' />
+            <ContactCard title="Location" text="Taipei, ROC" />
             <ContactCard
-              title='LinkedIn'
-              text='Kwan Lok NG'
-              url='https://www.linkedin.com/in/kwan-lok-ng-0ab026208/'
+              title="LinkedIn"
+              text="Kwan Lok NG"
+              url="https://www.linkedin.com/in/kwan-lok-ng-0ab026208/"
             />
             <ContactCard
-              title='Github'
-              text='https://github.com/NG-KWAN-LOK/'
-              url='https://github.com/NG-KWAN-LOK/'
+              title="Github"
+              text="https://github.com/NG-KWAN-LOK/"
+              url="https://github.com/NG-KWAN-LOK/"
             />
-            <ContactCard title='Email' text='sambig12004@gmail.com' />
           </div>
           <hr className={styles.infoSection_line} />
           <div className={styles.infoSection_footer}>

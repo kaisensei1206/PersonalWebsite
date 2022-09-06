@@ -12,8 +12,8 @@ const LanguagesCard: React.FC<LanguagesCardProps> = ({ title, subtitle }) => {
       <div className={styles.container_item_title}>
         <p className={styles.container_item_title_text}>{title}</p>
         <p className={styles.container_item_title_subtext}>
-          {subtitle.split("\n").map((i) => {
-            return <p>{i}</p>;
+          {subtitle.split("\n").map((i, index) => {
+            return <p key={index}>{i}</p>;
           })}
         </p>
       </div>

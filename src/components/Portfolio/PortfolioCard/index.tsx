@@ -26,8 +26,8 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
               {title}
             </div>
             <div className={styles.container_item_container_cover_top_subtitle}>
-              {subtitle.split("\n").map((i) => {
-                return <p>{i}</p>;
+              {subtitle.split("\n").map((i, index) => {
+                return <p key={index}>{i}</p>;
               })}
             </div>
           </div>

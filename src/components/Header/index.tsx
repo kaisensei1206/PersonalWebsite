@@ -26,7 +26,6 @@ const Header = () => {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  console.log(isHeaderDisplay);
   return (
     <header
       className={

@@ -26,7 +26,7 @@ const EducationCard: React.FC<EducationCardProps> = ({
         <a
           className={styles.container_item_title_title}
           href={website}
-          target='_blank'
+          target="_blank"
         >
           {title}
         </a>
@@ -35,8 +35,8 @@ const EducationCard: React.FC<EducationCardProps> = ({
       </div>
       <div className={styles.container_info}>
         <p className={styles.container_info_text}>
-          {info.split("\n").map((i) => {
-            return <p>{i}</p>;
+          {info.split("\n").map((i, index) => {
+            return <p key={index}>{i}</p>;
           })}
         </p>
       </div>
