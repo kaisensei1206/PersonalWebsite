@@ -9,9 +9,9 @@ import Instrument from "./components/Instrument";
 import Languages from "./components/Languages";
 import Portfolio from "./components/Portfolio";
 import Contact from "./components/Contact";
-import Experience from "./components/Experience";
+
 function App() {
-  document.title = "Kwan Lok NG Official";
+  document.title = "Fan Kai Wei Official";
   return (
     <div className={styles.container}>
       <Header />
@@ -20,7 +20,7 @@ function App() {
         <Intro />
         <Skill />
         <OtherSkill />
-        <Experience />
+       
         <Education />
         <Languages />
         <Instrument />
