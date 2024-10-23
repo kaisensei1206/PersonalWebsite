@@ -35,7 +35,7 @@ const Skill = () => {
               persentage={60}
               title={"Jest/ Testing Library/ Cypress"}
             />
-            <SkillCard persentage={60} title={"SQL/ MySQL"} />
+            <SkillCard persentage={60} title={"Mongodb/ MySQL"} />
             <SkillCard persentage={60} title={"Python"} />
           </div>
         </div>

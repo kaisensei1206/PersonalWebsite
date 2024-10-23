@@ -15,7 +15,7 @@ const Contact = () => {
               CONTACT
             </header>
             <div className={styles.titleSection_container_subtitle}>
-              Call me may be.
+              Call me Kaisensei.
             </div>
           </div>
         </div>
@@ -24,20 +24,20 @@ const Contact = () => {
             <ContactCard title="Location" text="Taipei, ROC" />
             <ContactCard
               title="LinkedIn"
-              text="Kwan Lok NG"
-              url="https://www.linkedin.com/in/kwan-lok-ng-0ab026208/"
+              text="Fan Kai Wei"
+              url="https://www.linkedin.com/in/%E5%87%B1%E5%B4%B4-%E8%8C%83-383241334/"
             />
             <ContactCard
               title="Github"
-              text="https://github.com/NG-KWAN-LOK/"
-              url="https://github.com/NG-KWAN-LOK/"
+              text="https://github.com/kaisensei1206/"
+              url="https://github.com/kaisensei1206/"
             />
           </div>
           <hr className={styles.infoSection_line} />
           <div className={styles.infoSection_footer}>
-            <div className={styles.infoSection_footer_EngName}>Sam</div>
+            <div className={styles.infoSection_footer_EngName}>Willy</div>
             <div className={styles.infoSection_footer_ChiName}>
-              <span>KWAN LOK, NG 吳軍樂</span>
+              <span>KAI WEI, FAN 范凱崴</span>
             </div>
           </div>
         </div>

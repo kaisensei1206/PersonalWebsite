@@ -24,19 +24,21 @@ const Education = () => {
             <div className={styles.infoSection_container_timeLine}>
               <div className={styles.infoSection_container_timeLine_end}></div>
               <EducationCard
-                period='2017 - Present'
-                title='National Taipei University of Technology'
-                website='https://csie.ntut.edu.tw/csie/Chinese/index.html/'
-                position='Bachelor of Computer Science and Information Engineering'
-                location='Taipei, ROC'
-                info=''
+                period='2021 - Present'
+                title='National central university'
+                website='https://www.ncu.edu.tw/tw/'
+                position='Bachelor Information management'
+                location='Taoyuan, ROC'
+                info={
+                  "• back-end development of final project using mongodb, APIs integration techniques both JavaScript & TypeScript.\n• Project leders& Project Designer , Back-end team members  ."
+                }
               />
               <EducationCard
-                period='2011 - 2017'
-                title='Lok Sin Tong Leung Chik Wai Memorial School'
-                website='https://www.lstlcw.edu.hk/it-school/php/webcms/public/mainpage/main.php3'
-                position='HKDSE 2017'
-                location='Hong Kong'
+                period='2011 - 2021'
+                title='Taipei School in Ho Chi Minh City'
+                website='https://www.tshcmc.edu.vn/'
+                position='Student'
+                location='Vietnam'
                 info={
                   "• Chinese\n• English\n• Mathematics\n• Liberal Studies\n• Information and Communication Technology\n• Chemistry"
                 }

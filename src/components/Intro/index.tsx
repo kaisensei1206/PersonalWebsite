@@ -22,7 +22,7 @@ const Intro = () => {
         <div className={styles.infoSection}>
           <div className={styles.infoSection_container}>
             <p>
-              Growing up in Hong Kong, I strongly believe that computer have had
+              Growing up in Vietnam, I strongly believe that computer have had
               a profound impact on modern human history. Computers make life
               easier for human being in various ways. I want to create my own
               webs and apps. Wherefore this shot in my life, I am interested in
@@ -53,8 +53,8 @@ const Intro = () => {
             </p>
             <p>
               To grow further, I am eager to become involved in community work.
-              I participated in flag selling every years when I stayed in Hong
-              Kong. Also I have worked as a volunteer in Elderly Home in Taiwan.
+              I participated in flag selling every years when I stayed in Vietname
+              . Also I have worked as a volunteer in Elderly Home in Taiwan.
               I have developed a sense of empathy. I strongly believe that I
               have to learn to put ourselves into others’ shoes and learn to
               make contribution to our society.

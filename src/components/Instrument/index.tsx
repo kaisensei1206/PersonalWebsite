@@ -24,7 +24,7 @@ const Instrument = () => {
             <InstrumentCard
               title={"Scotland Bagpipes"}
               subtitle={
-                "Former Scotland Bagpipes Player at Scout Association Of Hong Kong"
+                "Former Scotland Bagpipes Player at Scout Association Of Vietnam"
               }
             />
             <InstrumentCard

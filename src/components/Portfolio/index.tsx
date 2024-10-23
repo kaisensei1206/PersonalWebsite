@@ -38,54 +38,7 @@ const Portfolio = () => {
                 "Real Time Secured Messaging Web Application using React, Socket.io and cryptosystem."
               }
             />
-            <ProtfolioCard
-              imageUrl={demo2}
-              websiteUrl={"https://ds-shop-react.herokuapp.com/"}
-              githubUrl={"https://github.com/NG-KWAN-LOK/DS_Eshop"}
-              title={"'修皮'Online Shop"}
-              subtitle={"A online shop demo using React for Front-end."}
-            />
 
-            <ProtfolioCard
-              imageUrl={demo3}
-              websiteUrl={"https://buddy-city-info.sawajiri-ng.net/"}
-              githubUrl={"https://github.com/NG-KWAN-LOK/Buddy-City-React"}
-              title={"Buddy-INFO Buddy Visitors' Guide"}
-              subtitle={
-                "A online visitors' guide website using React and i18n for multi language."
-              }
-            />
-            <ProtfolioCard
-              imageUrl={demo8}
-              websiteUrl={"https://kotoba-asobou-solver.sawajiri-ng.net/"}
-              githubUrl={
-                "https://github.com/NG-KWAN-LOK/Japanese-Wordle-Solver"
-              }
-              title={"Kotobade Asobou Solver"}
-              subtitle={
-                "A web app to solve the game Japanese Version of Wordle - Kotobade Asobou."
-              }
-            />
-            <ProtfolioCard
-              imageUrl={demo7}
-              websiteUrl={"https://youtu.be/09_jaIdTidA?t=7213"}
-              githubUrl={"https://github.com/fantong11/VirtualCamera"}
-              title={"Final Year Project - Virtual Camera"}
-              subtitle={
-                "A Virtual Camera with Virtual Avatar and Virtual Reality using Unity and ARKit."
-              }
-            />
-            <ProtfolioCard
-              imageUrl={demo1}
-              websiteUrl={
-                "https://ng-kwan-lok.github.io/OOPGame/demo/Tower_of_the_Sorcerer/game_sample.html"
-              }
-              githubUrl={"https://github.com/NG-KWAN-LOK/OOPGame"}
-              title={"Tower of the Sorcerer"}
-              subtitle={
-                "A non-linear puzzle game disguised as an RPG using HTML5.\n If the screen turn white, please press 'F12'."
-              }
-            />
             <ProtfolioCard
               imageUrl={demo4}
               websiteUrl={
@@ -101,7 +54,7 @@ const Portfolio = () => {
               imageUrl={demo6}
               websiteUrl={"https://www.sawajiri-ng.net/"}
               githubUrl={"https://github.com/NG-KWAN-LOK/PersonalWebsite"}
-              title={"Sam Personal Website"}
+              title={"kaisensei Personal Website"}
               subtitle={
                 "This wonderful website and my first personal website using React."
               }
