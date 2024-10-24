@@ -1,0 +1,36 @@
+name: Deploy to GAE
+on:
+  push:
+    branches: [main]  # 更新为使用 main 分支
+  pull_request:
+
+jobs:
+  deploy:
+    name: Deploying to Google Cloud
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set Up Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"  # 将 Node.js 版本改为兼容的 18 版本
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: NPM Install
+        run: npm ci  # 使用 `npm ci` 确保依赖安装稳定
+         
+      - name: Build the project
+        run: npm run build  # 单独将 build 步骤分离
+
+      - name: App Engine auth
+        uses: google-github-actions/auth@v1
+        with:
+          credentials_json: ${{ secrets.GCP_CREDENTIALS }}
+
+      - name: Deploy to App Engine
+        uses: google-github-actions/deploy-appengine@v1
+        with:
+          deliverables: app.yaml
+          project_id: ${{ secrets.GCP_PROJECT }}  # 删除 version 属性，自动选择
